@@ -18,4 +18,8 @@ module
     });*/
     $scope.countries = aaa.query();
     
+})
+.controller('UsersCtrl', function($scope, Users){
+    $scope.content = 'UsersCtrl';
+    $scope.users = Users.users().query();
 });

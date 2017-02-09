@@ -1,0 +1,20 @@
+[
+    {
+        "login": "login1",
+        "firstName": "firstName1",
+        "lastName": "lastName1",
+        "email": "email1@domain.com"
+    },
+    {
+        "login": "login2",
+        "firstName": "firstName2",
+        "lastName": "lastName2",
+        "email": "email2@domain.com"
+    },
+    {
+        "login": "login3",
+        "firstName": "firstName3",
+        "lastName": "lastName3",
+        "email": "email3@domain.com"
+    }
+]

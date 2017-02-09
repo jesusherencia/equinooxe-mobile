@@ -35,6 +35,15 @@ module
       }
     }
   })
+  .state('base.users', {
+    url: '/users',
+    views: {
+      'content': {
+        templateUrl: 'templates/users.html',
+        controller: 'UsersCtrl'
+      }
+    }
+  })
   ;
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/home');

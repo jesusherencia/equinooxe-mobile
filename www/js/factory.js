@@ -43,7 +43,7 @@ module
   }
 })
 
-.factory('Users', function($http){
+.factory('Countries', function($http){
   return {
     users: function (){
       var url = 'https://restcountries.eu/rest/v1/all';
@@ -51,6 +51,15 @@ module
       return $http({ url:url ,method:"GET"});
       //var restResult = $http.jsonp(url);
       //return restResult.result;
+    }
+  }
+})
+
+.factory('Users', function($http, $resource){
+  return {
+    users: function (){
+      var url = 'data/users.json';
+      return $resource(url);
     }
   }
 })
